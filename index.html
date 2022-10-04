@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My music player</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container box">
+        <div class="music">
+          <!-- Music Player -->
+          <!-- Music Player -->
+          <div class="music-player">
+            <!-- Header -->
+            <!-- Header -->
+            <div class="header">
+              <div class="nem"><i class="fas fa-music"></i></div>
+              <h2>Now Playing</h2>
+              <div class="nem"><i class="fas fa-bars"></i></div>
+            </div>
+
+            <!-- Song Details -->
+            <!-- Song Details -->
+            <div class="details">
+              <img src="/images/music-logo.jpg" alt="" />
+              <p class="title">Song title</p>
+              <p class="artist">Artist Name</p>
+            </div>
+
+            <!-- Player Controls -->
+            <!-- Player Controls -->
+            <div class="controls">
+              <div class="song-timer">
+                <span class="current-time">00:10</span>
+                <span class="duration-time">03:17</span>
+              </div>
+
+              <!-- Song Duration -->
+              <!-- Song Duration -->
+              <div class="duration">
+                <input
+                  type="range"
+                  class="duration-slider"
+                  min="0"
+                  max="100"
+                  value="0"
+                />
+              </div>
+
+              <!-- Buttons Play, Prev and Next -->
+              <!-- Buttons Play, Prev and Next -->
+              <div class="buttons">
+                <button class="prev neu">
+                  <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="play">
+                  <i class="fas fa-play"></i>
+                </button>
+                <button class="next neu">
+                  <i class="fas fa-step-forward"></i>
+                </button>
+              </div>
+
+              <!-- Autoplay -->
+              <!-- Autoplay -->
+              <button class="play-all">
+                Play All <i class="fas fa-step-forward"></i>
+              </button>
+
+              <!-- Volume -->
+              <!-- Volume -->
+              <div class="volume">
+                <p id="show-volume">50</p>
+                <i class="fas fa-volume-up" id="volume-icon"></i>
+                <input type="range" id="volume" min="0" max="100" value="50" />
+              </div>
+
+              <!-- PlayList -->
+              <div class="music-playlist">
+                <!-- Header -->
+                <!-- Header -->
+                <div class="header playlist-header">
+                  <div class="nem"><i class="fas fa-music"></i></div>
+                  <h2>PlayList</h2>
+                  <div class="nem"><i class="fas fa-times"></i></div>
+                </div>
+
+                <!-- Playlist Item -->
+                <!-- Playlist Item -->
+                <div class="playlist-div">
+                  <div class="playlist">
+                    <span class="song-index">1</span>
+                    <p class="single-song">Song one</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

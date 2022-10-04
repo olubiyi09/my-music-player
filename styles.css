@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Custom Styling start here */
+/* Custom Styling start here */
+body {
+  background-color: #41464d;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music {
+  position: relative;
+  background-color: var(--color-dark-grey);
+  width: 40%;
+  border-radius: 3px;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header .fas {
+  font-size: 1.8rem;
+  color: var(--color-sec);
+}
+
+.header .fa-music {
+  padding-right: 3px;
+}
+
+.header .fa-bars,
+.header .fa-times {
+  cursor: pointer;
+}
+
+.header h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.nem {
+  padding: 1rem 1.2rem;
+  box-shadow: inset -3px -3px 5px #393f4780, inset 3px 3px 15px #343b44;
+  border-radius: 50%;
+}
+
+/* Details */
+/* Details */
+.details {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.details img {
+  width: 70%;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.details .artist {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-sec);
+}
+
+.details .title {
+  color: var(--white);
+}
+
+.controls {
+  padding: 2rem 1rem;
+}
+
+.song-timer {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin: 1rem 2.5rem;
+}
+
+/* Range Slide */
+/* Range Slide */
+input[type="range"] {
+  appearance: none;
+  width: 80%;
+  outline: none;
+  height: 2px;
+  margin: 0 10%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--color-sec);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Buttons */
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem auto;
+  width: 70%;
+  padding: 5px 0;
+}
+
+.buttons button {
+  border: none;
+  outline: none;
+  background-color: var(--color-dark-grey);
+  color: var(--color-sec);
+  padding: 1.5rem 1.7rem;
+  cursor: pointer;
+}
+
+.buttons .play {
+  background-color: var(--color-sec);
+  color: var(--color-dark-grey);
+  border-radius: 50%;
+}
+
+.neu {
+  padding: 1rem 1.2rem;
+  box-shadow: inset -3px -3px 5px #393f47, inset 3px 3px 15px #393f47;
+  border-radius: 50%;
+}
+
+.play-all {
+  display: block;
+  margin: 0 auto;
+  padding: 3px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.6rem;
+}
+
+.volume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+  padding: 0 1.7rem 0 2rem;
+}
+
+.volume p {
+  background-color: var(--color-sec);
+  color: var(--white);
+  font-size: 1.4rem;
+  padding: 0 3px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.volume i {
+  color: var(--color-sec);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.volume input[type="range"] {
+  margin: 1rem;
+}
+
+/* Music Playlist */
+/* Music Playlist */
+.music-playlist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+.playlist-header {
+  padding-bottom: 1rem;
+}
+
+.playlist-div {
+  width: 100%;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.playlist {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+/* Playlist Scroll Bar */
+/* Playlist Scroll Bar */
+.playlist-div::-webkit-scrollbar {
+  height: 5px;
+  width: 4px;
+  border: 1px solid #d5d5d5;
+  background: #d5d5d5;
+}
+
+.playlist-div::-webkit-scrollbar-track {
+  --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.playlist-div::-webkit-scrollbar-thumb {
+  background-color: var(--color-sec);
+  outline: 1px solid #eee;
+}
+
+.song-index {
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+
+.playlist p {
+  width: 90%;
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--white);
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+/* Media Query */
+/* Media Query */
+@media screen and (max-width: 430px) {
+  .music {
+    width: 100%;
+  }
+}
