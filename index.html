@@ -29,7 +29,7 @@
             <!-- Song Details -->
             <!-- Song Details -->
             <div class="details">
-              <img src="/images/music-logo.jpg" alt="" />
+              <img class="track-image" src="/images/music-logo.jpg" alt="" />
               <p class="title">Song title</p>
               <p class="artist">Artist Name</p>
             </div>
@@ -71,14 +71,16 @@
               <!-- Autoplay -->
               <!-- Autoplay -->
               <button class="play-all">
-                Play All <i class="fas fa-step-forward"></i>
+                Play All <i class="fas fa-sync-alt"></i>
               </button>
 
               <!-- Volume -->
               <!-- Volume -->
               <div class="volume">
                 <p id="show-volume">50</p>
-                <i class="fas fa-volume-up" id="volume-icon"></i>
+                <div id="mute-icon">
+                  <i class="fas fa-volume-mute" id="volume-icon"></i>
+                </div>
                 <input type="range" id="volume" min="0" max="100" value="50" />
               </div>
 
@@ -95,10 +97,10 @@
                 <!-- Playlist Item -->
                 <!-- Playlist Item -->
                 <div class="playlist-div">
-                  <div class="playlist">
+                  <!-- <div class="playlist">
                     <span class="song-index">1</span>
                     <p class="single-song">Song one</p>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -107,6 +109,7 @@
       </div>
     </section>
 
+    <script src="music.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
